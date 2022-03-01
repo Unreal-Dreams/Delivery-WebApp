@@ -1,4 +1,4 @@
-Building an full stack web application for delivery of Pakages. Angular is used for frontend and Node alongside mySQL is used for backend. 
+Building an full stack web application for delivery of Pakages. Angular is used for frontend and Node, express, nodemon alongside mySQL is used for backend. 
 
 ## Features
 
