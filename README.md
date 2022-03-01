@@ -24,6 +24,7 @@ You can order a parcel pickup by filling a form stating the type of parcel, weig
 
 ## Overall project structure
 This shows the overall structure of project you can access the frontend part by going in frontend/assignment-app and backedn apis are accessible at backend/deliveryApp/app.js
+
 ![project structer](https://user-images.githubusercontent.com/56435229/156176005-8f482499-5933-427f-a9da-56bcaeda21f8.png)
 
 ## Database Structure 
