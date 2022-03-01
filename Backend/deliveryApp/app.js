@@ -20,10 +20,10 @@ const pool = mySql.createPool({
   host: "localhost",
   user: "root",
   password: "",
-  database: "deliveryapp",
+  database: "deliveryapp", //Enter you table name here
 });
 
-//Get all Rows
+//Get all users
 app.get("/users", (req, res) => {
   pool.getConnection((err, connection) => {
     if (err) console.log(err);
@@ -42,31 +42,7 @@ app.get("/users", (req, res) => {
   });
 });
 
-//get by id
-
-// app.get("/users/:id", (req, res) => {
-//   pool.getConnection((err, connection) => {
-//     if (err) console.log(err);
-//     console.log("connection id " + connection.threadId);
-
-//     // query(sqlString, callback)
-//     connection.query(
-//       "SELECT * FROM users where id = ?",
-//       [req.params.id],
-//       (err, rows) => {
-//         connection.release(); // return connection to pool
-
-//         if (!err) {
-//           res.send(rows);
-//         } else {
-//           console.log(err);
-//         }
-//       }
-//     );
-//   });
-// });
-
-//get by email
+//get an user by emailId
 
 app.get("/users/:email", (req, res) => {
   pool.getConnection((err, connection) => {
@@ -90,7 +66,7 @@ app.get("/users/:email", (req, res) => {
   });
 });
 
-//delete a record
+//delete a user
 app.delete("/users/:id", (req, res) => {
   pool.getConnection((err, connection) => {
     if (err) console.log(err);
@@ -205,41 +181,9 @@ app.post("/orders/id", (req, res) => {
   });
 });
 
-//New Post method
-
-// app.post("/orders/wakadoodle", (req, res) => {
-//   let sampleFile;
-//   let uploadPath;
-
-//   if (!req.files || Object.keys(req.files).length === 0) {
-//     return res.status(400).send("No files were uploaded.");
-//   }
-
-//   // name of the input is sampleFile
-//   sampleFile = req.files.sampleFile;
-//   uploadPath = __dirname + "/upload/" + sampleFile.name;
-
-//   console.warn("Checking sample file", sampleFile);
-
-//   // Use mv() to place file on the server
-//   sampleFile.mv(uploadPath, function (err) {
-//     if (err) return res.status(500).send(err);
-
-//     connection.query(
-//       'UPDATE user SET profile_image = ? WHERE id ="1"',
-//       [sampleFile.name],
-//       (err, rows) => {
-//         if (!err) {
-//           res.redirect("/");
-//         } else {
-//           console.log(err);
-//         }
-//       }
-//     );
-//   });
-// });
-
 //--------------------------------------------------------------------Now we will work on Feedback Table-------------------------------------------------------------------//
+
+//Post a feedback
 
 app.post("/feedback", (req, res) => {
   pool.getConnection((err, connection) => {
