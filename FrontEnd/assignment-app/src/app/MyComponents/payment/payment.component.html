@@ -1,0 +1,32 @@
+<div class="container" style="margin-top: 100px; width: auto">
+  <div class="container">
+    <img
+      src="https://www.delhivery.com/wp-content/uploads/2022/02/unsplash_brizG9kR6qI-3.png"
+      alt="Parcel Image"
+      height="400px"
+      width="100%"
+    />
+  </div>
+
+  <div class="container" style="margin-top: 30px; background-color: aquamarine">
+    <h1>Your Total Is : {{ price }}</h1>
+    <h1>Your Order Id is : {{ id }}</h1>
+  </div>
+  <div class="container" style="margin-top: 30px">
+    <button type="button" class="btn btn-secondary" style="margin-left: 10px">
+      Credit Card
+    </button>
+
+    <button type="button" class="btn btn-secondary" style="margin-left: 10px">
+      Debit Card
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary"
+      style="margin-left: 10px"
+      (click)="PostParcel()"
+    >
+      Cash On Delivery
+    </button>
+  </div>
+</div>

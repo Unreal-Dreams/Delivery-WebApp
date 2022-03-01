@@ -1,0 +1,51 @@
+<div class="container">
+  <h1 style="margin-top: 100px">Welcom to Parcel Delivery</h1>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        [(ngModel)]="email"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        [(ngModel)]="pass"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="invalid">
+      <span id="invalid">Invalid Email/Password</span>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="checkLogin()">
+      Login
+    </button>
+    <button
+      type="Register"
+      class="btn btn-primary"
+      (click)="reg()"
+      style="margin-left: 10px"
+    >
+      Register
+    </button>
+    <button
+      type="Register"
+      class="btn btn-primary"
+      (click)="redForgotPass()"
+      style="margin-left: 10px"
+    >
+      Forget PassWord
+    </button>
+  </form>
+</div>

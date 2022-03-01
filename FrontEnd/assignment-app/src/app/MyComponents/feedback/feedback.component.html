@@ -1,0 +1,18 @@
+<div class="container">
+  <form #usersForm="ngForm" (ngSubmit)="postFeedback(usersForm.value)">
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"
+        >Do you want to share anything with us</label
+      >
+      <input type="text" ngModel name="info" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"
+        >Any suggestion for improvements</label
+      >
+      <input type="text" ngModel name="improv" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+  </form>
+</div>

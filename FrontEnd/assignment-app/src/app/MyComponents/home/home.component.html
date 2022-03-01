@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+      }
+
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://us.123rf.com/450wm/stnazkul/stnazkul1905/stnazkul190500032/126727399-portrait-of-woman-delivery-staff-in-blue-uniform-holding-parcel-box-size-d-in-warehouse.jpg?ver=6");
+        min-height: 75%;
+      }
+
+      .menu {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://drive.google.com/uc?export=view&id=1couz06cmnvpuxqWhTal0f3WzXQnnWHER"
+      alt=""
+      width="80%"
+      style="margin-left: 10%"
+    />
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-64">
+            <span class="w3-tag w3-wide">About Our Service</span>
+          </h5>
+          <p>
+            We are a courier delivery company founded in 2018 by a Software
+            Engineer Vaibhav Kumar. Vaibhav planned to bring revolution in the
+            pacakage delivery system by making cutting edge infantory management
+            tool and software to find the best routes.
+          </p>
+          <p>
+            In addition to parcel delivery we are also bringing hyperlocal
+            market place to us where you can also order from your local vendros
+            all day long and we will deliver it within 10 mins.
+          </p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p>
+              <i
+                >"Use Cutting Edge Technology to make your life easier and
+                fun.</i
+              >
+            </p>
+            <p>SDE, Designer and Owner: Vaibhav Kumar Singh</p>
+          </div>
+          <img
+            src="https://www.delhivery.com/wp-content/uploads/2022/02/unsplash_brizG9kR6qI-3.png"
+            style="width: 100%; max-width: 1000px"
+            class="w3-margin-top"
+          />
+          <p>
+            <strong>Opening hours:</strong> 24 X 7 just place your order on our
+            website.
+          </p>
+          <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom: 32px">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">WHERE TO FIND US</span>
+          </h5>
+          <p>You can find us at localhost:4200.</p>
+          <img
+            src="https://engineersparcel.in/wp-content/uploads/2021/09/PARCEL-BIG-BANNER-4.jpg"
+            class="w3-image"
+            style="width: 100%"
+          />
+          <p>
+            <span class="w3-tag">FYI!</span> We offer full-service catering for
+            any pacakage, large or small. We understand your needs and we will
+            cater the service to satisfy the biggerst criteria of them all, both
+            saftey and quickness.
+          </p>
+          <p>
+            <strong>Send a parce Today</strong> just click on the parcel tab and
+            you are good to go
+          </p>
+          <!-- <div style="margin-top: 30px">
+            <form action="/action_page.php" target="_blank">
+              <p>
+                <input
+                  class="w3-input w3-padding-16 w3-border"
+                  type="text"
+                  placeholder="Name"
+                  required
+                  name="Name"
+                />
+              </p>
+              <p>
+                <input
+                  class="w3-input w3-padding-16 w3-border"
+                  type="text"
+                  placeholder="Pacakage Type"
+                  required
+                  name="People"
+                />
+              </p>
+              <p>
+                <input
+                  class="w3-input w3-padding-16 w3-border"
+                  type="datetime-local"
+                  placeholder="Date and time"
+                  required
+                  name="date"
+                  value="2020-11-16T20:00"
+                />
+              </p>
+              <p>
+                <input
+                  class="w3-input w3-padding-16 w3-border"
+                  type="text"
+                  placeholder="Message \ Special requirements"
+                  required
+                  name="Message"
+                />
+              </p>
+              <p>
+                <button class="w3-button w3-black" type="submit">
+                  SEND MESSAGE
+                </button>
+              </p>
+            </form>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " w3-dark-grey",
+            ""
+          );
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+    </script>
+  </body>
+</html>
