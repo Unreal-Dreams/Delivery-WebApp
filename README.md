@@ -2,9 +2,9 @@ Building an full stack web application for delivery of Pakages. Angular is used 
 
 ## Features
 
-- Use [**Order Parcel**](#delivery) to get your parcel delivered to your desired location.
-- Use [**Feedback**](#feedback) to share your valuable feedback with us. 
-- Use [**Order History**](#feedback) to view and track your past orders.
+- Use [**Order Parcel**](#Order Parcel) to get your parcel delivered to your desired location.
+- Use [**Feedback**](#Feedback) to share your valuable feedback with us. 
+- Use [**Order History**](#Order History) to view and track your past orders.
 
 <!-- ## Demo
 You can view the demo and detailed description of the application by viewing the youtube video that I made for the same. 
